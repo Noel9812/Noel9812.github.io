@@ -77,7 +77,7 @@ export const ContactForm = () => {
     return (
       <div className="text-center p-8 border border-primary/10 rounded-lg">
         <h3 className="text-xl text-tertiary mb-2">Thank you for your message!</h3>
-        <p>I'll get back to you soon.</p>
+        <p>I Will get back to you soon.</p>
       </div>
     );
   }

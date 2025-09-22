@@ -33,6 +33,15 @@ const Carousel = ({ testimonials, orientation = ORIENTATION.HORIZONTAL }) => {
     };
   }, [isHovering]);
 
+  // Add goToNextSlide to the dependency array
+  useEffect(() => {
+    const timer = setInterval(() => {
+      goToNextSlide();
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [goToNextSlide]); // Add goToNextSlide here
+
   const handleMouseEnter = () => {
     setIsHovering(true);
   };
