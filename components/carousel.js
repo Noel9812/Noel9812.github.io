@@ -3,7 +3,8 @@
 import { PurpleText } from './texts';
 import { FaLinkedin } from 'react-icons/fa';
 import { ORIENTATION } from '@/utils/contants';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { TestimonialCard } from './sections/testimonials';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -33,24 +34,7 @@ const Carousel = ({ testimonials, orientation = ORIENTATION.HORIZONTAL }) => {
     };
   }, [isHovering]);
 
-  // Add goToNextSlide to the dependency array
-  useEffect(() => {
-    const timer = setInterval(() => {
-      goToNextSlide();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [goToNextSlide]); // Add goToNextSlide here
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
-
-  const goToNextSlide = () => {
+  const goToNextSlide = useCallback(() => {
     if (isTransitioning) return;
 
     setIsTransitioning(true);
@@ -60,7 +44,7 @@ const Carousel = ({ testimonials, orientation = ORIENTATION.HORIZONTAL }) => {
     setTimeout(() => {
       setIsTransitioning(false);
     }, 1000);
-  };
+  }, [isTransitioning, testimonials.length]);
 
   const goToPrevSlide = () => {
     if (isTransitioning) return;
@@ -74,6 +58,14 @@ const Carousel = ({ testimonials, orientation = ORIENTATION.HORIZONTAL }) => {
     setTimeout(() => {
       setIsTransitioning(false);
     }, 700);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
   };
 
   // Container classes based on orientation

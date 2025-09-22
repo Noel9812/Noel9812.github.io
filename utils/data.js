@@ -15,11 +15,11 @@ export const TESTIMONIALS = [
     name: "Alan Roni Mathew",
     profile_picture: "/images/alan.jpeg",
     location: "Kerala, India",
-    quote:
-      "Noel is one of the most reliable and hardworking developers Ive worked with. \n" +
-      "Beyond his technical expertise, he’s a true team player who takes\n" +
-      "feedback constructively and uses it to improve both the product and the process.\n" +
-      "If you need someone who consistently exceeds expectations,\n" +
+    quote: 
+      "Noel is one of the most reliable and hardworking developers I&apos;ve worked with. " +
+      "Beyond his technical expertise, he&apos;s a true team player who takes " +
+      "feedback constructively and uses it to improve both the product and the process. " +
+      "If you need someone who consistently exceeds expectations, " +
       "Noel is the person to count on.",
     link: "https://www.linkedin.com/in/alanroni/",
   },
@@ -162,7 +162,7 @@ export const CONTACT_INFO = {
     description:
       "Noel Mathews is my personal portfolio website where I showcase my work and share my journey as a web developer.",
     image: "/images/noel.png",
-    code: "https://github.com/Noel9812/Noel_Mathews",
+    code: "https://github.com/Noel9812/Noel9812.github.io",
     //link: "https://noelmathews.com/",
     type: "desktop",
     stack: ["NextJS", "TailwindCSS"],
@@ -178,7 +178,7 @@ export const CONTACT_INFO = {
     stack: ["ReactJS", "Flask", "ML"],
   },
   
-]
+] 
 
 export const PROJECTS = [
   {
@@ -211,6 +211,7 @@ export const PROJECTS = [
     type: "desktop",
     stack: ["ReactJS", "Flask", "ML"],
   },
+
   
 ];
 

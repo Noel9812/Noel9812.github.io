@@ -11,6 +11,16 @@ export const metadata = {
     "Learn about Noel Mathews's journey, skills, and experience as a Web Developer.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+  colorScheme: "dark light",
+};
+
 export default function AboutPage() {
   return (
     <>

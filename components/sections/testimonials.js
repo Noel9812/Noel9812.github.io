@@ -5,6 +5,7 @@ import { Section, WrapSection } from "../sections";
 import DotsSVG from "../assets/DotsSVG";
 import RectangleSVG from "../assets/RectangleSVG";
 import Carousel from "../carousel";
+import Image from 'next/image';
 
 export default function Testimonials() {
   return (
@@ -22,3 +23,24 @@ export default function Testimonials() {
     </Section>
   );
 }
+
+export const TestimonialCard = ({ image, quote, name, title }) => {
+  return (
+    <div className="flex flex-col gap-4 p-4 border border-primary/10 rounded-lg">
+      <div className="relative w-16 h-16"> {/* Added relative positioning */}
+        <Image
+          src={image}
+          alt={`${name}'s profile`}
+          fill={true}
+          style={{ objectFit: 'cover' }}
+          className="rounded-full"
+        />
+      </div>
+      <p className="text-primary/80">{quote}</p>
+      <div>
+        <h4 className="text-tertiary font-medium">{name}</h4>
+        <p className="text-primary/60 text-sm">{title}</p>
+      </div>
+    </div>
+  );
+};

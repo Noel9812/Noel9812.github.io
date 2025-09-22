@@ -12,6 +12,16 @@ const firaCode = Fira_Code({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+  colorScheme: "dark light",
+};
+
 export const metadata = {
   metadataBase: new URL("https://noel9812.github.io"),
   title: "Noel Mathews | Web Developer",
@@ -41,9 +51,6 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#2d2d2d",
-  colorScheme: "dark light",
 };
 
 export default function RootLayout({ children }) {
