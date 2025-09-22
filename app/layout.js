@@ -13,15 +13,18 @@ const firaCode = Fira_Code({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://noel9812.github.io"),
   title: "Noel Mathews | Web Developer",
-  description: "Portfolio of Noel Mathews, a Web Developer specializing in React, JavaScript and NextJS.",
-  keywords: "Noel Mathews, Web Developer, Frontend Developer, Software Developer, NextJS, React, JavaScript, India, Portfolio",
+  description: "Portfolio website of Noel Mathews, Web Developer",
+  keywords:
+    "Noel Mathews, Web Developer, Frontend Developer, Software Developer, NextJS, React, JavaScript, India, Portfolio",
   authors: [{ name: "Noel Mathews", url: "https://noelmathews.com" }],
   creator: "Noel Mathews",
   publisher: "Noel Mathews",
   openGraph: {
     title: "Noel Mathews | Web Developer",
-    description: "Portfolio of Noel Mathews, a Web Developer specializing in Frontend Development with expertise in React, JavaScript and NextJS.",
+    description:
+      "Portfolio of Noel Mathews, a Web Developer specializing in Frontend Development with expertise in React, JavaScript and NextJS.",
     url: "https://noelmathews.com",
     siteName: "Noel Mathews Portfolio",
     locale: "in-en",
@@ -30,7 +33,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Noel Mathews | Web Developer",
-    description: "Portfolio of Noel Mathews, a Web Developer specializing in Frontend Development with expertise in React, JavaScript and NextJS.",
+    description:
+      "Portfolio of Noel Mathews, a Web Developer specializing in Frontend Development with expertise in React, JavaScript and NextJS.",
     creator: "@NoelMathews",
   },
   robots: {
