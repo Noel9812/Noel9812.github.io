@@ -86,7 +86,7 @@ export const PROFILE_LINKS = {
 };
 
 export const SKILLS = {
-  LANGUAGES: ["JavaScript", "Python", "C", "Java"],
+  LANGUAGES: ["JavaScript", "Python", "C",],
   DATABASE: ["Firebase"],
   FRAMEWORKS: [
     "ReactJS",
@@ -116,14 +116,14 @@ export const ABOUT_ME = [
 
 export const SUMMARY =
   "Passionate Web Developer with hands-on experience in crafting reliable and scalable applications.\n" +
-  " Proficient in ReactJS, Next.js, Python, Java, and C, with a strong \n" +
+  " Proficient in ReactJS, Next.js, Python, and C, with a strong \n" +
   " focus on designing intuitive user interfaces and solid backend systems.\n" +
   " I enjoy solving complex problems, staying aligned with modern development practices,\n" +
   " and bringing ideas to life through clean, efficient code. Motivated to collaborate with\n" +
   " forward-thinking teams and contribute to impactful projects.";
 
 export const CURRENT_WORK = {
-  WORK: "Portfolio Website",
+  WORK: "Looking for something new :)",
   LINK: "",
 };
 
@@ -152,8 +152,8 @@ export const CONTACT_INFO = {
     description:
       "Gitzzeria is a modern cashless canteen platform that streamlines campus dining by enabling digital orders, real-time updates, and seamless management for students and staff.",
     image: "/images/Landing.png",
-    code: "https://github.com/Noel9812/Gitzzeria",
-    //link: "",
+    code: "https://github.com/Noel9812/Gitzzeria-Revamped",
+    link: "https://gitzzeria.vercel.app",
     type: "mobile",
     stack: ["ReactJS", "HTML", "CSS"],
   },
@@ -163,7 +163,7 @@ export const CONTACT_INFO = {
       "Noel Mathews is my personal portfolio website where I showcase my work and share my journey as a web developer.",
     image: "/images/noel.png",
     code: "https://github.com/Noel9812/Noel9812.github.io",
-    //link: "https://noelmathews.com/",
+    link: "https://noel9812.github.io",
     type: "desktop",
     stack: ["NextJS", "TailwindCSS"],
   },
@@ -186,8 +186,8 @@ export const PROJECTS = [
     description:
       "Gitzzeria is a modern cashless canteen platform that streamlines campus dining by enabling digital orders, real-time updates, and seamless management for students and staff.",
     image: "/images/Landing.png",
-    code: "https://github.com/Noel9812/Gitzzeria",
-    //link: "",
+    code: "https://github.com/Noel9812/Gitzzeria-Revamped",
+    link: "https://gitzzeria.vercel.app",
     type: "mobile",
     stack: ["ReactJS", "SCSS"],
   },
@@ -197,7 +197,7 @@ export const PROJECTS = [
       "Noel Mathews is my personal portfolio website where I showcase my work and share my journey as a web developer.",
     image: "/images/noel.png",
     code: "https://github.com/Noel9812/Noel_Mathews",
-    //link: "https://noelmathews.com/",
+    link: "https://noel9812.github.io",
     type: "desktop",
     stack: ["NextJS", "TailwindCSS"],
   },
